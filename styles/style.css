@@ -1,0 +1,186 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 1rem 2rem;
+  color: #fff;
+}
+
+.navbar-logo h1 {
+  font-size: 1.5rem;
+}
+
+.navbar-menu {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar-menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar-menu li a:hover {
+  color: #ffdd57;
+}
+
+/* Home Section */
+.home-section {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+  background-image: url(../images/gambar.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home-image {
+  width: 100%;
+  object-fit: cover;
+  height: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.home-content h2 {
+  font-size: 2rem;
+  color: #f6fcdf;
+}
+
+.home-content p {
+  font-size: 1rem;
+  color: #f6fcdf;
+}
+
+/* Biography Section */
+.biography-section {
+  padding: 2rem;
+  background-color: #e8e8e8;
+}
+
+.biography-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.biography-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Map Section */
+#map {
+  width: 100%;
+}
+#map h2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: #333;
+  border-bottom: 1px solid;
+}
+#map-container {
+  width: 100%;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+/* Contact Section */
+.contact {
+  margin-top: 75px;
+  background-color: #f4f4f4;
+  padding: 40px 20px;
+  text-align: center;
+}
+.contact h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.contact label {
+  display: block;
+  color: #666;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.contact button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.contact button:hover {
+  background-color: #45a049;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 15px 20px;
+  text-align: center;
+}
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}
+.footer .footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 5px;
+}
+.footer .footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-menu {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .home-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .biography-content h2 {
+    font-size: 1.5rem;
+  }
+}
